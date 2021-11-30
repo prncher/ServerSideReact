@@ -20,14 +20,14 @@ const port = process.env.port || 4000;
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.get('/', function (req, res) {
-    const app = ReactDOMServer.renderToString(<App />);
+    const root = ReactDOMServer.renderToString(<App />);
     fs.readFile('index.html', function (err, data) {
         if (err) {
             res.writeHead(500);
             return res.end('Error loading index.html');
         }
         res.writeHead(200);
-        res.end(data.replace('<div id="root"></div>', `<div id="root">${app}</div>`));
+        res.end(data.replace('<div id="root"></div>', `<div id="root">${root}</div>`));
     });
 });
 

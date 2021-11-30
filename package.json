@@ -8,9 +8,10 @@
   },
   "main": "index.js",
   "scripts": {
+    "cleanBuild": "rimraf ./build/*",
     "node": "node --trace-warnings --use_strict ./server/index.js",
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "npm run cleanBuild && GENERATE_SOURCEMAP=false react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
