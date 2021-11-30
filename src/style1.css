@@ -1,0 +1,59 @@
+.App {
+    text-align: center;
+  }
+  
+div#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div#tasksList{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    margin:2vw;
+    width:50vw;
+    min-height:10vh;
+    outline: dodgerblue solid 10px;
+}
+
+input {
+    height: 3vh;
+    background-color: #ddd;
+}
+
+input.addButton {
+    height: 4vh;
+    min-width: 6vw;
+    margin-left: 1vw;
+    background-color: tomato;
+    color: #333;
+    padding:0 15px;
+}
+
+input.addButton:hover {
+    background-color: blueviolet;
+}
+
+#tasksList>div{
+    margin: 5px;
+}
+
+#tasksList>div::after {
+    content: 'X';
+    margin-left: 15px;
+    color: red;
+    background-color: #aaa;
+    padding: 0 20px;
+    cursor: pointer;
+}
+
+.task>button .completedTask>button {
+    margin:0 12px;
+    color:red;
+}
+
+.completedTask {
+    text-decoration: line-through;
+}
