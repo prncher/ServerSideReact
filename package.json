@@ -16,6 +16,7 @@
     "eject": "react-scripts eject"
   },
   "keywords": [
+    "compression",
     "nodejs",
     "express",
     "react"
@@ -23,6 +24,8 @@
   "author": "Prince Cheruvathur",
   "license": "MIT",
   "dependencies": {
+    "compressible": "^2.0.18",
+    "compression": "^1.7.4",
     "express": "^4.17.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
