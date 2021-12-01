@@ -9,4 +9,6 @@ compression
 
 reactjs (ReactDOMServer for server side rendering of html)
 
-![Lighthouse Results](https://github.com/prncher/pomodoro/blob/main/images/lighthouse-results.png)
+![Lighthouse Results](
+https://github.com/prncher/ServerSideReact/blob/main/images/lighthouse--results.png)
+
