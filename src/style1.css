@@ -19,41 +19,77 @@ div#tasksList{
 }
 
 input {
-    height: 3vh;
+    min-height: 30px;
     background-color: #ddd;
 }
 
+input[type='button'] {
+    min-height: 30px;
+}
+
 input.addButton {
-    height: 4vh;
+    min-height: 30px;
     min-width: 6vw;
     margin-left: 1vw;
-    background-color: tomato;
-    color: #333;
+    color: #222;
     padding:0 15px;
+    box-sizing: border-box;
 }
 
 input.addButton:hover {
-    background-color: blueviolet;
+    background-color: #fff;
 }
 
 #tasksList>div{
-    margin: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 5vh;
+    color:blue;
+    box-sizing: border-box;
+    border-style:inset;
+    margin: 2%;
+    padding: 15px 0;
 }
 
 #tasksList>div::after {
     content: 'X';
-    margin-left: 15px;
+    margin-left: 5px;
     color: red;
     background-color: #aaa;
-    padding: 0 20px;
+    padding: 0.5vh 20px;
     cursor: pointer;
+    border: 1px solid red;
 }
 
-.task>button .completedTask>button {
+.task {
+    display: inline;
+}
+
+.task>button, .completedTask>button {
     margin:0 12px;
-    color:red;
+    color:#000;
+    min-height: 30px;
 }
 
 .completedTask {
+    display: table;
     text-decoration: line-through;
+    text-decoration-color: tomato;
+    text-decoration-style: wavy;
+    text-decoration-thickness: 4px;
+}
+
+#taskName {
+    margin: 0 10px;
+    min-height: 30px;
+    box-sizing: border-box;
+}
+
+.completedCount {
+    font-size: 30px;
+    color: cornsilk;
+    background-color: crimson;
+    margin-bottom: 12px;
 }
